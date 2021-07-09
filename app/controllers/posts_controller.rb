@@ -1,10 +1,15 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
+    @post = Post.find_by(id: params[:id])
+    @post_count = Post.all.count
+    
   end
+  
   
   def new
     @post = Post.new
+    @post_count = Post.all.count
   end
  
   def create
@@ -15,14 +20,17 @@ class PostsController < ApplicationController
     else
       render "new"
     end
+    
   end
  
   def show
     @post = Post.find(params[:id])
+    @post_count = Post.all.count
   end
  
   def edit
     @post = Post.find(params[:id])
+    @post_count = Post.all.count
   end
  
   def update
