@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  email: MyString
+  postmemo: MyString
+  start_at: MyString
+  stop_at: MyString
+  allday: MyString
+
+two:
+  title: MyString
+  email: MyString
+  postmemo: MyString
+  start_at: MyString
+  stop_at: MyString
+  allday: MyString
